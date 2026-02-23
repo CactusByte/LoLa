@@ -1,3 +1,6 @@
+
+<img width="500" height="500" alt="Lola" src="https://github.com/user-attachments/assets/3eab8e9e-75a6-4a02-91b4-7c10c7c17ee8" />
+
 # LoLa — Web Agent
 
 Browser-automation agent powered by LangGraph and OpenAI. It navigates sites, handles popups, extracts content, and can be used via **CLI** or **Telegram**.
