@@ -10,7 +10,8 @@ export class BrowserController {
 
   async ensure(): Promise<Page> {
     if (!this.browser) {
-      this.browser = await chromium.launch({ headless: false }); // set true on servers
+      const headless = process.env.HEADLESS === "true";
+      this.browser = await chromium.launch({ headless });
       const ctx = await this.browser.newContext();
       this.page = await ctx.newPage();
     }
